@@ -12,7 +12,7 @@ header {
 }
 h1{
   text-align: center;
-  
+  color:#999acc;
 }
 
 /* Меню */
@@ -75,6 +75,26 @@ h1{
   background-color: #666;
 }
 
+/* Кнопка наверх */
+#topbutton {
+  width:100px;
+  border:2px solid #ccc;
+  background:#f7f7f7;
+  text-align:center;
+  padding:10px;
+  position:sticky; /* Элемент рассматривается как относительно
+  позиционированный, пока сдерживающий его блок не пересечёт указанный
+  порог в контейнере, в котором он прокручивается после чего он
+  обрабатывается как «застрявший» до тех пор, пока не встретит
+  противоположный край содержащего его блока*/
+  top:50px;
+  cursor:pointer;
+  color:#333;
+  font-family:verdana;
+  font-size:12px;
+  border-radius: 5px;
+}
+
 /* Текст */
 .main {
   text-align: left;
@@ -105,10 +125,15 @@ aside li{
 .leftimg{
   float:left; /* Выравнивание по левому краю */
   margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+  border: 2px solid black;
+  padding: 3px;
 }
 .rightimg{
   float:right; /* Выравнивание по левому краю */
   margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+  border: 2px solid black;
+  padding: 3px;
+
 }
 /* Очищающий блок для подвала*/
 .clear {
