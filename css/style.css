@@ -10,13 +10,17 @@ header {
   background-color: #f0f0f0;
   text-align: center;
 }
-h1{
+h1 {
   text-align: center;
-  color:#999acc;
+  color: #999acc;
+}
+h2{
+  margin-left: 30px;
+  color: rgb(173, 44, 44);
 }
 
 /* Меню */
-.header{
+.header {
   width: 100%;
   z-index: 50;
 }
@@ -77,21 +81,21 @@ h1{
 
 /* Кнопка наверх */
 #topbutton {
-  width:100px;
-  border:2px solid #ccc;
-  background:#f7f7f7;
-  text-align:center;
-  padding:10px;
-  position:sticky; /* Элемент рассматривается как относительно
+  width: 100px;
+  border: 2px solid #ccc;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 10px;
+  position: sticky; /* Элемент рассматривается как относительно
   позиционированный, пока сдерживающий его блок не пересечёт указанный
   порог в контейнере, в котором он прокручивается после чего он
   обрабатывается как «застрявший» до тех пор, пока не встретит
   противоположный край содержащего его блока*/
-  top:50px;
-  cursor:pointer;
-  color:#333;
-  font-family:verdana;
-  font-size:12px;
+  top: 50px;
+  cursor: pointer;
+  color: #333;
+  font-family: verdana;
+  font-size: 12px;
   border-radius: 5px;
 }
 
@@ -108,6 +112,25 @@ article {
   margin: 20px;
 }
 
+/* Таблица */
+table {
+  border: 1px solid grey;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+  border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+  border: 1px solid grey;
+}
+/* section{
+  margin-top: 10em;
+  margin-bottom: 10em;
+  border-top: 2px solid black;
+
+} */
+
 aside {
   position: relative;
   background: #f0f0f0;
@@ -116,25 +139,43 @@ aside {
   width: 200px;
   float: right;
 }
-aside li{
+aside li {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 /* Изображения */
-.leftimg{
-  float:left; /* Выравнивание по левому краю */
-  margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+.leftimg {
+  /* float:left; 
+  margin: 7px 7px 7px 0; 
   border: 2px solid black;
   padding: 3px;
+  font-size: smaller; */
+  float: left; /* Выравнивание по правому краю */
+  border: 1px solid #333; /* Параметры рамки */
+  padding: 7px; /* Поля внутри блока */
+  margin: 5px; /* Отступы вокруг */
+  background: #f0f0f0;
+  text-align: center;
+  text-indent: 0;
 }
-.rightimg{
-  float:right; /* Выравнивание по левому краю */
-  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
-  border: 2px solid black;
-  padding: 3px;
 
+.rightimg {
+  /* float:right;  */
+  /* Выравнивание по левому краю */
+  /* margin: 7px 0 7px 7px;  */
+  /* Отступы вокруг картинки */
+  /* border: 2px solid black;
+  padding: 3px; */
+  float: right; /* Выравнивание по правому краю */
+  border: 1px solid #333; /* Параметры рамки */
+  padding: 7px; /* Поля внутри блока */
+  margin: 5px; /* Отступы вокруг */
+  background: #f0f0f0;
+  text-align: center;
+  text-indent: 0;
 }
+
 /* Очищающий блок для подвала*/
 .clear {
   clear: both;
@@ -153,7 +194,6 @@ footer {
   background-color: #5d5f61;
   color: #fff;
   text-align: center;
-  
 }
 
 #downnavbar {
