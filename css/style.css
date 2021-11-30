@@ -144,6 +144,11 @@ aside li {
   padding-bottom: 10px;
 }
 
+/* Форма */
+.contact-form ul{
+  list-style-type: none;
+}
+
 /* Изображения */
 .leftimg {
   /* float:left; 
@@ -174,6 +179,13 @@ aside li {
   background: #f0f0f0;
   text-align: center;
   text-indent: 0;
+}
+
+.nascar_img{
+  margin: 0 auto;
+  width: 200px;
+  border: 2px solid red;
+  border-radius: 5px;
 }
 
 /* Очищающий блок для подвала*/

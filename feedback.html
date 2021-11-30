@@ -91,6 +91,25 @@
     </nav>
     <main>
       <h1>Нам будет приятно услышать ваше мнение о сайте</h1>
+      <form class="contact-form" actiom="/my-handling-form-page" method="POST">
+        <ul>
+          <li>
+            <label for="name">ФИО</label>
+            <input type="text" id="name" name="user_name" value="Иванов Иван Иванович" required/>
+          </li>
+          <li>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="user_mail" value="ivanov01@email.ru" required/>
+          </li>
+          <li>
+            <label for="msg">Сообщение</label>
+            <textarea id="msg" name="user_message" required>Введите Ваше сообщение...</textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Отправить</button>
+          </li>
+        </ul>
+      </form>
       <clear> </clear>
       <div id="substrate-footer"></div>
     </main>
