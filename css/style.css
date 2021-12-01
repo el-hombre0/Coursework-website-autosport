@@ -150,6 +150,7 @@ aside li {
 }
 
 /* Изображения */
+
 .leftimg {
   /* float:left; 
   margin: 7px 7px 7px 0; 
@@ -181,8 +182,8 @@ aside li {
   text-indent: 0;
 }
 
-.nascar_img{
-  margin: 0 auto;
+.nascar_img{ 
+  margin: 10px auto;
   width: 200px;
   border: 2px solid red;
   border-radius: 5px;
@@ -223,6 +224,21 @@ footer {
   width: 100px;
   text-decoration: none;
   text-align: center;
+}
+
+/* Новости */
+.grid{
+  display: grid;
+
+}
+.news1, .news2{
+  display: grid;
+  text-align: justify;
+  width: 35%;
+  padding: 2%;
+  background-color: rgb(255, 251, 245);
+  border: 1px solid gray;
+  border-radius: 2em;
 }
 
 /* Социальные сети */
