@@ -1,0 +1,96 @@
+.h,
+.n,
+.m,
+.s,
+.a,
+.f {
+  display: grid;
+  justify-content: center; /*выравнивание элементов внутри контейнера по центру*/
+  color: black;
+  background-color: white;
+  border: 3px solid red;
+  border-radius: 5px;
+  padding: 1em;
+}
+.h {
+  grid-area: H;
+}
+.n {
+  grid-area: N;
+}
+.m {
+  grid-area: M;
+}
+.s {
+  grid-area: S;
+}
+.a {
+  grid-area: A;
+}
+.f {
+  grid-area: F;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 10;
+  grid-template-areas:
+    "H H H H H"
+    "S N N N A"
+    "S M M M A"
+    "S M M M A"
+    "S M M M A"
+    "S M M M A"
+    "S M M M A"
+    "S M M M A"
+    "S M M M A"
+    "F F F F F";
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 426px) {
+  .grid {
+    grid-template-areas:
+      "H"
+      "N"
+      "M"
+      "M"
+      "M"
+      "M"
+      "M"
+      "M"
+      "M"
+      "S"
+      "A"
+      "F";
+    grid-auto-rows: minmax(
+      60px,
+      auto
+    ); /*определяет размер любых автоматически созданных треков. Minmax определяет
+       диапазон размеров, который больше или равен min и меньше или равен max.*/
+  }
+}
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  .grid {
+    grid-template-areas:
+      "H H H H H"
+      "N N N N N"
+      "S M M M M"
+      "S M M M M"
+      "S M M M M"
+      "S M M M M"
+      "S M M M M"
+      "S M M M M"
+      "S M M M M"
+      "A F F F F";
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(60px, auto)
+    ); /*если есть только одна строка и есть место для дополнительных колонок,
+      но нет элементов, которые можно вставить эти колонки, то тогда он сделает ширину пустых колонок равную нулю. А если выставить
+      максимальную ширину колонок на 1fr, то браузер разделит оставшееся место поровну между ними.*/
+    grid-auto-rows: minmax(60px, auto); /*размер неявно заданных строк*/
+  }
+}

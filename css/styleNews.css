@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Заголовок */
 header {
   background-color: #f0f0f0;
@@ -14,14 +18,13 @@ h1 {
   text-align: center;
   color: #999acc;
 }
-h2{
+h2 {
   margin-left: 30px;
   color: rgb(173, 44, 44);
 }
-h3{
+h3 {
   color: rgb(236, 58, 58);
 }
-
 
 /* Меню */
 .header {
@@ -149,7 +152,7 @@ aside li {
 }
 
 /* Форма */
-.contact-form ul{
+.contact-form ul {
   list-style-type: none;
 }
 
@@ -186,7 +189,7 @@ aside li {
   text-indent: 0;
 }
 
-.nascar_img{ 
+.nascar_img {
   margin: 10px auto;
   width: 200px;
   border: 2px solid red;
@@ -231,24 +234,52 @@ footer {
 }
 
 /* Новости */
-.grid{
+.grid {
   display: grid;
-
+  grid-gap: 1em;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  grid-template-areas:
+    "n1 n2"
+    "n3 n4"
+    "n5 n5";
+  /* float:left; */
 }
-#news1, #news2, #news3, #news4, #news5{
+#news1,
+#news2,
+#news3,
+#news4,
+#news5 {
   display: grid;
   text-align: justify;
-  width: 35%;
+  /* width: 35%; */
   padding: 2%;
   background-color: rgb(255, 251, 245);
   border: 1px solid gray;
   border-radius: 2em;
 }
+#news1 {
+  grid-area: n1;
+}
+#news2 {
+  grid-area: n2;
+}
+#news3 {
+  grid-area: n3;
+}
+#news4 {
+  grid-area: n4;
+}
+#news5 {
+  grid-area: n5;
+}
+
+
 /* Подписи к картинкам */
-.subheader{ 
+.subheader {
   margin: 1em;
   font-size: small;
-   color: gray;
+  color: gray;
 }
 
 /* Социальные сети */
