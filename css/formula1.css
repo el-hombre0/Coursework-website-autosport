@@ -1,3 +1,9 @@
+/* Шрифт */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
 * {
   padding: 0;
   margin: 0;
@@ -399,7 +405,54 @@ p{
   text-indent: 0;
 }
 
-/* Список фактов формула-1 */
+/* Список фактов */
 .list_in_main{
   padding-left: 1em;
+}
+
+/* Колонка новостей на главной странице */
+.s aside {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  float: right;
+}
+.s aside li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Кнопка наверх */
+#topbutton {
+  width: 100px;
+  border: 2px solid #ccc;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 10px;
+  position: sticky; /* Элемент рассматривается как относительно
+  позиционированный, пока сдерживающий его блок не пересечёт указанный
+  порог в контейнере, в котором он прокручивается после чего он
+  обрабатывается как «застрявший» до тех пор, пока не встретит
+  противоположный край содержащего его блока*/
+  top: 10px;
+  cursor: pointer;
+  color: #333;
+  font-family: verdana;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/* Подписи к картинкам */
+.subheader {
+  margin: 1em;
+  font-size: small;
+  color: gray;
+}
+
+/* Текст */
+article {
+  text-align: justify; /* Выравнивание по ширине*/
+  text-indent: 30px;
+  margin: 20px;
 }
