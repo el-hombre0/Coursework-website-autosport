@@ -157,6 +157,7 @@ footer address{
     grid-template-areas:
       "H"
       "N"
+      "A"
       "M"
       "M"
       "M"
@@ -165,7 +166,6 @@ footer address{
       "M"
       "M"
       "S"
-      "A"
       "F";
     grid-auto-rows: minmax(
       60px,
@@ -180,14 +180,14 @@ footer address{
     grid-template-areas:
       "H H H H H"
       "N N N N N"
-      "S M M M M"
-      "S M M M M"
-      "S M M M M"
-      "S M M M M"
-      "S M M M M"
-      "S M M M M"
-      "S M M M M"
-      "A F F F F";
+      "A M M M M"
+      "A M M M M"
+      "A M M M M"
+      "A M M M M"
+      "A M M M M"
+      "A M M M M"
+      "A M M M M"
+      "S F F F F";
     grid-template-columns: repeat(
       auto-fit,
       minmax(60px, auto)
