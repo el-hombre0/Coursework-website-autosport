@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\css\formula1.css"
+      href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\css\style.css"
       rel="stylesheet"
     />
     <link
@@ -21,6 +21,7 @@
         <img
           src="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\Picture\Logo2.svg"
         />
+        <span id="doc_time"> Дата и время </span>
       </div>
       <div class="n">
         <header class="header">
@@ -38,7 +39,11 @@
               <nav class="header__menu">
                 <ul class="header__list">
                   <li>
-                    <a href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\index.html" class="header__link">Главная</a>
+                    <a
+                      href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\index.html"
+                      class="header__link"
+                      >Главная</a
+                    >
                   </li>
                   <li>
                     <a
@@ -94,12 +99,12 @@
             </div>
           </div>
         </header>
-        <h2>World Racing</h2>
+        <h1>World Racing</h1>
       </div>
       <div class="m">
         <main>
-          <h1>Нам будет приятно услышать ваше мнение о сайте</h1>
-          <form
+          <h2>Нам будет приятно услышать ваше мнение о сайте</h2>
+          <!-- <form
             class="contact-form"
             actiom="/my-handling-form-page"
             method="POST"
@@ -135,14 +140,34 @@
                 <button type="submit">Отправить</button>
               </li>
             </ul>
+          </form> -->
+
+          <form
+            class="form"
+            name="feedback"
+            method="POST"
+            action=""
+          >
+            <div class="infofield">Тема обращения</div>
+            <select name="theme" required="required">
+              <option value="">Выберите вариант</option>
+              <option>Вопрос по работе сервиса</option>
+              <option>Помощь в ориентировании по сайту</option>
+              <option>Пожелания / предложения</option>
+            </select>
+            <div>Ваше имя</div>
+            <input type="text" name="name" required="required" />
+            <div>Ваш email</div>
+            <input type="email" name="email" required="required" />
+            <div>Сообщение</div>
+            <textarea name="message"></textarea>
+            <input type="submit" name="submit_btn" value="Отправить" />
           </form>
-          <clear> </clear>
-          <div id="substrate-footer"></div>
         </main>
       </div>
 
-      <div class="s">sidebar</div>
-      <div class="a"><h2>Оглавление</h2></div>
+      <div class="s"></div>
+      <div class="a"></div>
       <div class="f">
         <footer>
           <nav id="downnavbar">
@@ -157,12 +182,6 @@
                 <a
                   href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\career.html"
                   >Карьера</a
-                >
-              </li>
-              <li>
-                <a
-                  href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\contacts.html"
-                  >Контакты</a
                 >
               </li>
               <li>

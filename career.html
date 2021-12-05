@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\css\formula1.css"
+      href="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\css\style.css"
       rel="stylesheet"
     />
     <link
@@ -21,6 +21,7 @@
         <img
           src="C:\Users\ZERO1\OneDrive\Документы\Институт\2 Курс\Разработка клиентских частей интернет-рессурсов\Курсовая\Сайт\Picture\Logo2.svg"
         />
+        <span id="doc_time"> Дата и время </span>
       </div>
       <div class="n">
         <header class="header">
@@ -100,10 +101,74 @@
         </header>
         <h2>Хотите стать частью нашей команды?</h2>
       </div>
-      <div class="m"></div>
+      <div class="m">
+        <a id="topbutton" href="#">Наверх</a>
 
-      <div class="s">sidebar</div>
-      <div class="a"><h2>Оглавление</h2></div>
+        <article>
+          Наша команда растёт и развивается, поэтому нам требуются светлые умы.
+          Возможно, именно Вы станете нашей новой частичкой на пути к развитию и
+          процветанию сайта про автоспорт.
+          <ul>
+            <li>Мы проверяем на прочность идеи друг друга.</li>
+            <li>Мы заботимся друг о друге.</li>
+            <li>Мы вдохновляем друг друга.</li>
+            <li>
+              Мы инвестируем в своих сотрудников и помогаем им профессионально
+              расти и развиваться. Ведь компания растет соразмерно.
+            </li>
+            <li>
+              Мы меняем привычные устои и не боимся рисковать. Мы создаем
+              условия для рождения инноваций. Это душа нашей компании.
+            </li>
+            <li>
+              Мы разделяем общую цель: показать людям настоящий автоспорт.
+            </li>
+            <li>
+              Если вы хотите стать частью нашей команды, тогда откликайтесь на
+              открытые вакансии прямо сейчас!
+            </li>
+          </ul>
+        </article>
+        <form class="form" name="feedback" method="POST" action="">
+          <div>Ваше ФИО</div>
+          <input type="text" name="name" required="required" />
+          <div>Ваш email</div>
+          <input type="email" name="email" required="required" />
+          <div>Ваш номер телефона</div>
+          <input type="tel" name="phone" required="required" />
+          <div>Выберите интересующую вакансию:</div>
+          <label class="cont"
+            >Дизайнер-проектировщик
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="cont"
+            >Администратор сайта
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="cont"
+            >Администратор пабликов в социальных сетях
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="cont"
+            >WEB-разработчик(HTML, JS, PHP, SQL)
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <div>Расскажите о себе</div>
+          <textarea name="message"></textarea>
+          <input type="submit" name="submit_btn" value="Отправить" />
+        </form>
+      </div>
+
+      <div class="s"></div>
+      <div class="a"></div>
       <div class="f">
         <footer>
           <nav id="downnavbar">
