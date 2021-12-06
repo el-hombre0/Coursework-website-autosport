@@ -103,6 +103,20 @@ article {
   padding-left: 1em;
 }
 
+/* Таблица */
+table {
+  border: 1px solid grey;
+  text-align: center;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+  border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+  border: 1px solid grey;
+}
+
 /* Расстояние между параграфами */
 p {
   margin-bottom: 1em;

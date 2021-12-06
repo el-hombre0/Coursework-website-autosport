@@ -108,7 +108,7 @@
           Наша команда растёт и развивается, поэтому нам требуются светлые умы.
           Возможно, именно Вы станете нашей новой частичкой на пути к развитию и
           процветанию сайта про автоспорт.
-          <ul>
+          <ul class="list_in_main">
             <li>Мы проверяем на прочность идеи друг друга.</li>
             <li>Мы заботимся друг о друге.</li>
             <li>Мы вдохновляем друг друга.</li>
@@ -123,12 +123,12 @@
             <li>
               Мы разделяем общую цель: показать людям настоящий автоспорт.
             </li>
-            <li>
-              Если вы хотите стать частью нашей команды, тогда откликайтесь на
-              открытые вакансии прямо сейчас!
-            </li>
           </ul>
         </article>
+        <p>
+          Если вы хотите стать частью нашей команды, тогда откликайтесь на
+          открытые вакансии прямо сейчас!
+        </p>
         <form class="form" name="feedback" method="POST" action="">
           <div>Ваше ФИО</div>
           <input type="text" name="name" required="required" />
@@ -139,7 +139,7 @@
           <div>Выберите интересующую вакансию:</div>
           <label class="cont"
             >Дизайнер-проектировщик
-            <input type="checkbox" checked="checked" />
+            <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
 
@@ -156,12 +156,12 @@
           </label>
 
           <label class="cont"
-            >WEB-разработчик(HTML, JS, PHP, SQL)
+            >WEB-разработчик (HTML, JS, PHP, SQL)
             <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
 
-          <div>Расскажите о себе</div>
+          <div>Расскажите о себе:</div>
           <textarea name="message"></textarea>
           <input type="submit" name="submit_btn" value="Отправить" />
         </form>
