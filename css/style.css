@@ -88,8 +88,8 @@ h3 {
   color: rgb(255, 0, 0);
 }
 /* Дата в новостях */
-h4{ 
-  color:rgb(122, 122, 122);
+h4 {
+  color: rgb(122, 122, 122);
   margin-bottom: 1em;
 }
 article {
@@ -128,7 +128,7 @@ p {
 .h {
   text-align: center;
 }
-.h img{
+.h img {
   padding-top: 20px;
 }
 
@@ -164,7 +164,7 @@ p {
 /* Навигация $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 /*Шапка*/
-.h{
+.h {
   border-bottom: 3px solid red;
   /* background-color: rgb(236, 236, 236); */
 }
@@ -390,7 +390,6 @@ p {
     transition: all 0.3s ease 0s; /*замедление анимации выезда меню сверху*/
     background-color: rgb(173, 187, 190);
     padding: 70px 10px 20px 10px; /*сдвиг элементов меню под шапку + отступы*/
-
   }
   .header__menu.active {
     /* меню становится видно */
@@ -596,7 +595,7 @@ footer address {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  
+
   user-select: none;
 }
 
