@@ -1,7 +1,0 @@
-index.html
-news.html
-feedback.html
-rcrs.html
-nascar.html
-formula1.html
-parisdacar.html
